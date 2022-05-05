@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { overflow: hidden; }
+            canvas, section.gui { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: transparent; }
+            canvas#terrain { background-color: #96a9c1; }
+        </style>
+        <title>Island</title>
+    </head>
+    <body>
+        <canvas id="terrain"></canvas>
+        <canvas id="mouse"></canvas>
+        <section class="gui">
+            <h1>WSAD to move</h1>
+            <h1>Scroll to zoom</h1>
+            <h3>Reload for new island</h3>
+        </section>
+        <script src="src/types.js"></script>
+        <script src="src/world.js"></script>
+        <script src="src/input.js"></script>
+        <script src="src/@main.js"></script>
+    </body>
+</html>
